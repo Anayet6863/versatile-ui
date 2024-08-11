@@ -144,7 +144,8 @@
     display: flex;
 
 }
-.card{
+
+.card {
     position: absolute;
     top: 195px;
     right: 170px;
@@ -155,18 +156,22 @@
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
-    
-    
+
+
 }
-.card p,h2{
-    background-color:rgba(255, 255, 255,0.1);
-      
+
+.card p,
+.card h2 {
+    background-color: rgba(255, 255, 255, 0.1);
+
 }
-.card p{
+
+.card p {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.65);
 }
-.card2{
+
+.card2 {
     position: absolute;
     top: 520px;
     right: 480px;
@@ -178,57 +183,138 @@
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
     display: flex;
-      
+
 }
-.circle{
+
+.circle {
     background-color: red;
     border-radius: 50%;
     width: 40px;
-    height:40px;
+    height: 40px;
 }
-.card2 p,h2{
-    background-color:rgba(255, 255, 255,0.1);
-      
+
+.card2 p,
+.card2 h2 {
+    background-color: rgba(255, 255, 255, 0.1);
+
 }
-.card2 p{
+
+.card2 p {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.65);
 }
 
+/* CSS for change your habbits section. */
+.habbits-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habbits-head p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
+}
+
+.habbits-head h2 {
+
+    margin-top: 75px;
+}
+
+.habbit-card1 {
+    text-align: center;
+}
+
+.habbit-card1 img {
+    border-radius: 50%;
+}
+
+.habbit-card1 p {
+    font-size: 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.habbit-card1 img {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Code for Responsiveness */
 /* Banner-section */
 @media screen and (max-width:576px) {
+    .mr {
+        margin-right: 0px;
+    }
+
+    .ml {
+        margin-left: 0px;
+    }
+
     .nav-bar {
         display: none;
-        visibility: hidden;
-        width: auto;
+        width: 100%;
     }
 
     .nav-head {
         margin-left: 10px;
         margin-right: 10px;
     }
-
+    .banner {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        /* border: 1px solid pink; */
+    
+    }
     .banner-container {
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-left: 10px;
 
 
     }
 
     .banner-info {
         margin-left: 10px;
-       
+        margin-right:10px;
+        width: calc(100% - 20px);
+
     }
-    .banner-image{
+
+    .banner-image {
         margin-left: 10px;
-       
+
     }
-    .card{
+    .banner-info-p{
+        white-space: normal;
+        text-align: left;
+        text-wrap: wrap;
+    }
+
+    .card {
         position: absolute;
         top: 690px;
-        right:20px;
+        right: 20px;
         width: 170px;
         height: 60px;
         padding: 10px;
@@ -236,9 +322,10 @@
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.1);
         text-align: center;
-        
+
     }
-    .card2{
+
+    .card2 {
         position: absolute;
         top: 850px;
         right: 200px;
@@ -249,7 +336,32 @@
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.1);
         text-align: center;
-        
-        
+
+    }
+
+    /* CSS for change your habbits */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+   
+    .habbits-head p {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 5px;
+        margin-bottom: 5px;
+        white-space:normal;
+       text-align: center;
+
+    }
+    .habbits-head{
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+    .habbit-card1{
+        margin-bottom: 10px;
     }
 }
