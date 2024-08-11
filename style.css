@@ -1,7 +1,255 @@
-p{
-    background-color: gray;
+/* font Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+
+
+.style-font {
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+* {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
     color: white;
 }
-*{
-    background-color: rebeccapurple;
+
+.ml {
+    margin-left: 200px;
+}
+
+.mr {
+    margin-right: 200px;
+}
+
+/* Banner style */
+.banner {
+    margin: 0 auto;
+    width: 1918px;
+    height: 715px;
+    border: 1px solid pink;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.nav-bar {
+    display: flex;
+    margin-right: 200px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+
+
+}
+
+.nav-items {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.nav-links {
+    text-decoration: none;
+}
+
+.nav-head {
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    margin-left: 200px;
+}
+
+.btn {
+    background-color: rgb(230, 83, 60);
+    width: 80px;
+    height: 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.nav-links {
+    margin-top: 10px;
+}
+
+.banner-info {
+    width: 520px;
+    height: auto;
+    margin-top: 100px;
+    text-align: left;
+
+}
+
+.banner-info h3 {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.style-h3 {
+    font-style: italic;
+}
+
+.banner-info-p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-btn1 {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.banner-btn2 {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.banner-image {
+    width: 345px;
+    height: 580px;
+    margin-left: 600px;
+}
+
+.banner-container {
+    display: flex;
+
+}
+.card{
+    position: absolute;
+    top: 195px;
+    right: 170px;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    
+    
+}
+.card p,h2{
+    background-color:rgba(255, 255, 255,0.1);
+      
+}
+.card p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+.card2{
+    position: absolute;
+    top: 520px;
+    right: 480px;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    display: flex;
+      
+}
+.circle{
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+}
+.card2 p,h2{
+    background-color:rgba(255, 255, 255,0.1);
+      
+}
+.card2 p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* Code for Responsiveness */
+/* Banner-section */
+@media screen and (max-width:576px) {
+    .nav-bar {
+        display: none;
+        visibility: hidden;
+        width: auto;
+    }
+
+    .nav-head {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+
+    }
+
+    .banner-info {
+        margin-left: 10px;
+       
+    }
+    .banner-image{
+        margin-left: 10px;
+       
+    }
+    .card{
+        position: absolute;
+        top: 690px;
+        right:20px;
+        width: 170px;
+        height: 60px;
+        padding: 10px;
+        border: 1px solid rgb(255, 255, 255, 0.1);
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: center;
+        
+    }
+    .card2{
+        position: absolute;
+        top: 850px;
+        right: 200px;
+        width: 180px;
+        height: 60px;
+        padding: 10px;
+        border: 1px solid rgb(255, 255, 255, 0.1);
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: center;
+        
+        
+    }
 }
