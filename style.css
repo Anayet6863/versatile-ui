@@ -126,6 +126,7 @@
     border-radius: 30px;
     align-items: center;
     margin-top: 20px;
+    border: none;
 }
 
 .banner-btn2 {
@@ -135,6 +136,7 @@
     border-radius: 30px;
     align-items: center;
     border: 1px solid white;
+    background-color:transparent;
 }
 
 .banner-image {
@@ -304,8 +306,155 @@
     margin-top: 60px;
 }
 
+/* Css for Our team section */
+.head-info {
+    width: 700px;
+    height: 150px;
+    /* border: 1px solid wheat; */
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
 
+}
 
+.head-info h3 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+.head-info p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.team-pic {
+    width: 350px;
+    height: 300px;
+}
+
+.team-pic img {
+    width: 350px;
+    height: 300px;
+    border-radius: 18px;
+    /* border: 1px dotted wheat; */
+
+}
+
+.image-info {
+    position: relative;
+    bottom: 60px;
+    left: 20px;
+    /* border: 1px solid wheat; */
+    height: 50px;
+    width: 200px;
+}
+
+.image-info p {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.team-image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
+    /* border: 1 px solid wheat; */
+    width: 1100px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 100px;
+}
+
+/* Css for footer section */
+.title {
+    width: 450px;
+    height: 92px;
+    /* border: 1px solid wheat; */
+}
+
+.title h2 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+}
+
+.title p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.link1 h2 {
+    font-size: 2rem;
+}
+
+.link1-items {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.link1 {
+    width: 200px;
+    height: 150px;
+    /* border: 1px solid wheat; */
+}
+
+.footer-container {
+    padding-left: 200px;
+    padding-right: 200px;
+    /* border: 1px dotted green; */
+    display: grid;
+    grid-template-columns: repeat(3, 0.85fr);
+    height: 300px;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.horizontal-line {
+    width: 1400px;
+    height: 0px;
+}
+
+.rights {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.horizontal p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
 
 
@@ -353,13 +502,12 @@
         width: 100%;
         margin-left: 10px;
 
-
     }
 
     .banner-info {
         margin-left: 10px;
         margin-right: 10px;
-        width: calc(100% - 20px);
+        width: 100%;
 
     }
 
@@ -437,17 +585,19 @@
         border-radius: 20px;
         background: rgb(34, 34, 34);
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.85fr;
         padding: 10px;
         justify-content: center;
         align-items: center;
         justify-content: center;
         gap: 10px;
         margin-left: 10px;
-       
+        /* border: 1px solid wheat; */
+
     }
-    .run-image{
-        width: 400px;
+
+    .run-image {
+        width: auto;
         height: 100%;
     }
 
@@ -475,14 +625,13 @@
     }
 
     .run-info p {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         font-weight: normal;
         text-align: left;
         margin-top: 10px;
         margin-bottom: 10px;
         text-wrap: wrap;
-        white-space: nospace;
-        columns: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.5);
     }
 
     .run-btn {
@@ -493,4 +642,106 @@
         border: none;
         margin-top: 30px;
     }
+
+    /* Css for out team */
+    .team-image-container {
+        display: grid;
+        grid-template-columns: repeat(1, 0.85fr);
+        row-gap: 10px;
+        padding: 10px;
+        /* border: 1 px solid wheat; */
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .head-info {
+        width: 425px;
+        height: 150px;
+        /* border: 1px solid wheat; */
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 100px;
+
+    }
+
+    .pic1,
+    .pic4 {
+        display: none;
+    }
+
+    /* Responsiveness of footer */
+
+    .footer-container {
+
+        /* border: 1px dotted green; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 600px;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0.1);
+        justify-content: flex-end;
+
+
+    }
+
+    .title {
+        width: 200px;
+        height: 95px;
+        /* border: 1px solid wheat; */
+        margin-bottom: 30px;
+    }
+
+    .title h2 {
+        font-weight: 800;
+        font-size: 2.2rem;
+        color: rgb(230, 83, 60);
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    .title p {
+        font-size: 0.85rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255, 0.5);
+
+    }
+
+    .link1 h2 {
+        font-size: 2rem;
+    }
+
+    .link1-items {
+        list-style: none;
+        margin-bottom: 5px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: rgb(255, 255, 255, 0.5);
+    }
+
+    .link1 {
+        width: 200px;
+        height: 150px;
+        /* border: 1px solid wheat; */
+    }
+
+    .horizontal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .horizontal-line {
+        width: 400px;
+        height: 0px;
+    }
+
 }
