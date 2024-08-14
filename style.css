@@ -1032,6 +1032,19 @@
             margin-top: 20px;
             margin-bottom: 20px;
      }
+     .question{
+   
+        background-color: wheat;
+         width: auto;
+         height: auto;
+         border-radius: 15px;
+         border: none;
+         padding-left: 10px;
+         position: absolute;
+         left: 23px;
+       
+     
+     }
  
 
 }
