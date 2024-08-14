@@ -42,7 +42,7 @@
     margin: 0 auto;
     width: auto;
     height: 715px;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 
 }
 
@@ -83,6 +83,9 @@
     font-style: italic;
     margin-left: 200px;
 }
+.bar{
+    display: none;
+}
 
 .btn {
     background-color: rgb(230, 83, 60);
@@ -91,6 +94,7 @@
     border-radius: 10px;
     font-weight: 600;
     padding-left: 10px;
+    border: none;
 }
 
 .nav-links {
@@ -136,7 +140,7 @@
     border-radius: 30px;
     align-items: center;
     border: 1px solid white;
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .banner-image {
@@ -165,11 +169,11 @@
 
 }
 
-.card p,
+/* .card p,
 .card h2 {
     background-color: rgba(255, 255, 255, 0.1);
 
-}
+} */
 
 .card p {
     font-size: 0.8rem;
@@ -187,7 +191,9 @@
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
+    align-items: center;
     display: flex;
+    justify-content: center;
 
 }
 
@@ -196,13 +202,14 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    margin-right: 10px;
 }
 
-.card2 p,
+/* .card2 p,
 .card2 h2 {
     background-color: rgba(255, 255, 255, 0.1);
 
-}
+} */
 
 .card2 p {
     font-size: 0.8rem;
@@ -226,6 +233,7 @@
 .habbits-head h2 {
 
     margin-top: 75px;
+    font-size: 3rem;
 }
 
 .habbit-card1 {
@@ -456,6 +464,122 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* Css for BMI calcultor */
+.bmi-container{
+    /* border: 1px dotted greenyellow; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(34, 34, 34);
+    width: auto;
+    height: 500px;
+    margin-top: 100px;
+    
+}
+.bmi-head {
+    margin: 0 auto;
+    /* border: 1px solid wheat; */
+    width: 650px;
+    height: 120px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.bmi-head h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.bmi-head p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+.bmi-chart {
+    height: auto;
+    width: 50%;
+    margin-left: 200px;
+}
+
+.table {
+    /* border: 1px solid rgb(255, 255, 255); */
+    width: 340px;
+    height: 230px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.tds {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.ths {
+    font-size: 1rem;
+    color: white;
+}
+
+.input-field {
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+}
+.form-btn{
+    color: rgb(255, 255, 255);
+    background-color:rgb(230, 83, 60) ;
+    width: auto;
+    height: 50px;
+    border-radius: 42px;
+    border: none;
+    font-size: 1.1ren;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-between;
+    /* border: 1px solid wheat; */
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.form-head{
+    /* border: 1px solid rgb(228, 104, 3); */
+    height: 100px;
+}
+.form-head p{
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.form{
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(2,1fr) ;   
+    /* border: 1px solid slateblue; */
+}
+.third{
+    grid-column: span 2;
+}
+.input-field{
+    width: auto;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -482,7 +606,10 @@
         display: none;
         width: 100%;
     }
-
+    .bar{
+        display: block;
+        margin-right: 20px;
+    }
     .nav-head {
         margin-left: 10px;
         margin-right: 10px;
@@ -500,13 +627,13 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-left: 10px;
+        /* margin-left: 10px; */
 
     }
 
     .banner-info {
-        margin-left: 10px;
-        margin-right: 10px;
+        /* margin-left: 10px;
+        margin-right: 10px; */
         width: 100%;
 
     }
@@ -685,6 +812,7 @@
         width: auto;
         background-color: rgba(255, 255, 255, 0.1);
         justify-content: flex-end;
+        margin-top: 50px;
 
 
     }
@@ -743,5 +871,70 @@
         width: 400px;
         height: 0px;
     }
+
+    /* Responsiveness for BMI section */
+    .bmi-container{
+        /* border: 1px dotted greenyellow; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        background-color: rgb(34, 34, 34);
+        width: 100%;
+        height:auto;
+        margin-right: 0px;
+       
+    }
+    .bmi-head {
+        margin: 0 auto;
+        /* border: 1px solid wheat; */
+        width: 90%;
+        height: 100px;
+        /* margin-top: 100px; */
+        /* margin-bottom: 100px; */
+    
+    }
+    .bmi-chart {
+        height: auto;
+        width: 50%;
+        margin-left: 45px;
+        margin-top: 0px;
+        
+        
+    }
+    
+    .table {
+        /* border: 1px solid rgb(255, 255, 255); */
+        width: 340px;
+        height: 230px;
+        /* margin-top: 100px;
+        margin-bottom: 100px; */
+        margin-left: 0px;
+    }
+    .form-container{
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* border: 1px solid wheat; */
+        /* margin-right: 200px; */
+        /* margin-top: 100px;
+        margin-bottom: 100px; */
+    }
+    .form-head{
+        /* border: 1px solid rgb(228, 104, 3); */
+        height: 100px;
+        margin: 0px;
+        margin-left: 20px;
+    }
+    .form{
+        display: grid;
+        gap:10px;
+        grid-template-columns: repeat(2,1fr) ;   
+        /* border: 1px solid slateblue; */
+        margin: 0px;
+        margin-left: 20px;
+    }
+ 
 
 }
